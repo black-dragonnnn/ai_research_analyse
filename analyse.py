@@ -22,7 +22,7 @@ data_new = data_new[data_new["Affiliation"].notna()]
 print(f"清洗后有效数据:{len(data_new)}")
 
 # 写入mysql
-engine = create_engine("mysql+pymysql://root:123777@localhost:3306/paper_analysis?charset=utf8mb4")
+engine = create_engine("mysql+pymysql://root:******@localhost:3306/paper_analysis?charset=utf8mb4")
 data_new.to_sql(
     name="papers_clean",   
     con=engine,           
