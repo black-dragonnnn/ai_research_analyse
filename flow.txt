@@ -1,0 +1,5 @@
+analyse.py文件:
+1. 8~18行代码不建议修改read_csv为其他函数(如read_xlsx),
+否则无法识别null,None等空值,代码有待改进 
+ 
+ 
